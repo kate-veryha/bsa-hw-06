@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+aside {
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    background-color: #332532;
+    color: #ff974f;
+}
+
+section {
+    margin-left: 25%;
+    width: 75%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #FFF9E5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+div#text {
+    width: 75%;
+    background-color: red;
+    position: fixed;
+    align-self: flex-end;
+}
+
+div#message-container {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    align-self: flex-start;
+    padding: 10px;
+}
+
+.highlight-username {
+    background-color: #ff974f;
+    color: #332532;
+}

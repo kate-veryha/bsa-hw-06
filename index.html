@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The simplest chat</title>
+    <link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+    <aside>
+        <div id="name-field">
+            <input placeholder="Type your name here..." id="name-input">
+            <input type="button" value="OK" id="submit-name-button">
+        </div>
+        <h2>Users</h2>
+        <h3 id="user-header">Mr. Nobody</h3>
+        <ul id="users"></ul>
+    </aside>
+    <section>
+        <div id="message-container">
+            <h2>Messages</h2>
+            <ul id="messages"></ul>
+        </div>
+        <div id="text">
+            <textarea id="message-text"></textarea>
+            <input type="button" value="Send" id="submit-text-button" >
+        </div>
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
